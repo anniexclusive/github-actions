@@ -101,8 +101,7 @@ jobs:
 
       - name: Stop ${{ env.SERVICE_NAME }}
         run: docker stop $SERVICE_NAME
-  
-    deploy:
+  deploy:
     needs: test-image
     runs-on: ubuntu-latest
 
